@@ -1,0 +1,29 @@
+<div ng-app='todoApp' ng-controller="listController">
+
+    <br>
+
+    <div class="row">
+        <div class="col s12 m6 offset-m3">
+            <form ng-submit="submitNewTodo()">
+                <div class="input-field">
+                    <input id="newTodoInput" type="text" class="active" ng-model="newTodo">
+                    <label for="newTodoInput">What do you want to get done?</label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row" ng-repeat="todo in todos">
+        <div class="col s12 m6 offset-m3">
+            <div class="card blue-grey darken-1 z-depth-2">
+                <div class="card-content white-text">
+                    <span class="card-title">
+                        {{todo.title}}
+                        <button class="btn-flat right grey-text text-lighten-1 valign">done</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

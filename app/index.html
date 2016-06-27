@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="todoApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="todoApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="todoApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="todoApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico"/>
+    <title>Todo List</title>
+    <meta name="description" content="Your online todo list">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Stylesheets -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.css" media="screen,projection">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- Materialize Files -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+
+    <!-- Angular Files -->
+    <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-route/angular-route.js"></script>
+
+    <!-- Application Files -->
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="views/list/list.js"></script>
+    <script type="text/javascript" src="js/factories/todos.js"></script>
+</head>
+<body>
+
+<header>
+    <nav class="top-nav deep-orange lighten-2">
+        <div class="container">
+            <a class="brand-logo">Todo List</a>
+        </div>
+    </nav>
+</header>
+
+<div class="view-container">
+    <div ng-view class="view-frame"></div>
+</div>
+
+</body>
+</html>
